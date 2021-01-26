@@ -1,0 +1,3 @@
+[run]
+source = Site_Wisitka
+omit = Site_Wisitka/test*
