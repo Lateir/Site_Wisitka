@@ -56,7 +56,7 @@
         <form action="/" method="POST">
           <input type="text" name="username" placeholder="Введите Ваше имя"><br>
           <input type="text" name="phone" placeholder="Введите Ваш номер телефона"><br>
-          <button type="submit" value="feedback">Отправить</button>
+          <input type="submit" name="feedback" value="Отправить">
         </form>
       </div>
     </div>
@@ -66,14 +66,18 @@
         <form action="/" method="POST">
           <input type="text" name="username" placeholder="Ваше имя"><br>
           <textarea name="comment" cols="66" placeholder="Ваш комментарий" contenteditable></textarea><br>
-          <button type="submit" value="comment">Оставить</button>
+          <input type="submit" name="review" value="Оставить">
         </form>
         <div class="comment-section__comments">
-          <div class="comment-section__comment">
-            <p>Имя</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero itaque vel neque facilis aut odit libero ex illo quod tempore.</p>
-            <p>Дата</p>
-          </div>
+        {% if reviews != None %}
+            {% for review in reviews %}
+                <div class="comment-section__comment">
+                <p>{{ review.username }}</p>
+                <p>{{ review.comment }}</p>
+                <p>{{ review.date }}</p>
+                </div>
+            {% endfor %}
+        {% endif %}
         </div>
       </div>
     </div>
