@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт-визитка</title>
+  <link rel="stylesheet" href="../static/css/index.css">
+  {% block css %}{% endblock css %}
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page">
+    <!-- <header class="header">
+      <div class="header__wrapper">
+        <div class="header__item header__item_1">
+          <div class="header__img_wrapper">
+            <div class="header__img header__img_1"></div>
+          </div>
+          <p>Арсений Никоркин, <br>frontend developer</p>
+        </div>
+        <div class="header__item header__item_2">
+          <div class="header__img_wrapper">
+            <div class="header__img header__img_2"></div>
+          </div>
+          <p>Даниил Поветкин, <br>backend developer</p>
+        </div>
+      </div>
+    </header> -->
+    <header class="header">
+      <h1>Добро пожаловать на наш сайт-визику!</h1>
+    </header>
+    <div class="about">
+      <h1>О нас</h1>
+      <div class="about__wrapper">
+        <div class="about__item about__item_1">
+          <div class="about__img_wrapper">
+            <img src="../static/img/rmfbcDhlCV4.jpg" alt="">
+          </div>
+          <p class="about__bio_header">Арсений Никоркин, frontend developer</p>
+          <p class="about__bio_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quae omnis sunt aperiam eveniet tempore dolores, quis maxime culpa, hic rem magni modi? Voluptates, atque ratione fugit sint delectus dolore commodi. Assumenda unde dicta fuga dolore, ratione sequi, omnis ex atque neque dolorum perferendis cupiditate necessitatibus illum iste consequuntur rem eaque quasi tempore. Magni modi totam nobis error neque odit tempore obcaecati dicta recusandae praesentium! Ipsam corporis nostrum sunt dolor ex repudiandae consectetur quibusdam quidem esse, dolore nihil inventore totam quaerat perspiciatis quae, fuga earum numquam rerum! Repellendus doloribus nisi aliquid alias distinctio debitis, magnam fugit quia possimus! Quas, mollitia.</p>
+        </div>
+        <div class="about__item about__item_2">
+          <div class="about__img_wrapper">
+            <img src="../static/img/CXNjDr98zCA.jpg" alt="">
+          </div>
+          <p class="about__bio_header">Даниил Поветкин, backend developer</p>
+          <p class="about__bio_body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo suscipit sed enim tenetur aspernatur ducimus ipsa reiciendis dolorum hic molestias cupiditate omnis impedit rerum corrupti architecto nisi eum blanditiis excepturi maxime ab iste, modi commodi? Vel magni asperiores voluptatibus culpa odit quod. Perspiciatis maiores, doloremque suscipit voluptatibus asperiores modi iusto assumenda culpa ex rem voluptate quae ducimus vitae deserunt veniam adipisci laborum fugiat natus itaque non? Veniam quas tempora laudantium nulla dolor repudiandae est? Odit recusandae eaque maxime optio nobis quas aspernatur autem officiis atque, ratione quis aliquid ad magni veniam aut reiciendis laboriosam eveniet deserunt corrupti numquam repudiandae!</p>
+        </div>
+      </div>
+    </div>
+    <div class="feedback">
+      <h1>Хотите связаться с нами?</h1>
+      <div class="feedback__wrapper">
+        <h3>Оставьте Ваши данные, и мы обязательно позвоним Вам!</h3>
+        <form action="/" method="POST">
+          <input type="text" name="username" placeholder="Введите Ваше имя"><br>
+          <input type="text" name="phone" placeholder="Введите Ваш номер телефона"><br>
+          <button type="submit" value="feedback">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <div class="comment-section">
+      <h1>Оставляйте Ваши комментарии!</h1>
+      <div class="comment-section__wrapper">
+        <form action="/" method="POST">
+          <input type="text" name="username" placeholder="Ваше имя"><br>
+          <textarea name="comment" cols="66" placeholder="Ваш комментарий" contenteditable></textarea><br>
+          <button type="submit" value="comment">Оставить</button>
+        </form>
+        <div class="comment-section__comments">
+          <div class="comment-section__comment">
+            <p>Имя</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero itaque vel neque facilis aut odit libero ex illo quod tempore.</p>
+            <p>Дата</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
