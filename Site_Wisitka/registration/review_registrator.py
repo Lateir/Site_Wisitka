@@ -19,4 +19,7 @@ def register_review(request):
 
 def get_all_reviews(request):
     query = request.dbsession.query(ReviewDb)
+    rows = len(query.all())
+    if rows == 0:
+        return None
     return query.order_by(ReviewDb.id)

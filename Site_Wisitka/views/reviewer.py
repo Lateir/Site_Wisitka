@@ -6,11 +6,10 @@ from ..registration.feedback_registrator import register_feedback
 @view_config(route_name='home', renderer='../templates/index.jinja2')
 def reviewer(request):
     feedback = None
-
     if request.params.__contains__('review'):
         register_review(request)
     elif request.params.__contains__('feedback'):
-        feedback = register_feedback()
+        feedback = register_feedback(request)
 
     reviews = get_all_reviews(request)
     return {'project': 'Site_Wisitka',

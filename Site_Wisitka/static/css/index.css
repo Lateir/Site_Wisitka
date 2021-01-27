@@ -171,7 +171,7 @@ html, body {
 
 }
 
-.feedback__wrapper button[type="submit"] {
+.feedback__wrapper input[type="submit"] {
   height: 50px;
   width: 150px;
   outline: none;
@@ -219,7 +219,7 @@ html, body {
 
 .comment-section__wrapper input[type="text"], 
 .comment-section__wrapper textarea,
-.comment-section__wrapper button[type="submit"] {
+.comment-section__wrapper input[type="submit"] {
   outline: none;
   padding: 0 10px;
   border-radius: 2px;
@@ -236,7 +236,7 @@ html, body {
   padding: 10px 10px;
 }
 
-.comment-section__wrapper button[type="submit"] {
+.comment-section__wrapper input[type="submit"] {
   height: 30px;
   width: 100px;
 }
@@ -251,5 +251,13 @@ html, body {
   width: 50%;
   margin: 0 auto;
   text-align: left;
-  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+.comment-section__username {
+  font-weight: bolder;
+}
+
+.feedback__wrapper p{
+  font-weight: lighter;
 }
